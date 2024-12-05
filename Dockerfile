@@ -9,6 +9,8 @@ RUN apk update
 # tzdata = タイムゾーンデータ
 RUN apk add g++ make mysql-dev tzdata
 
+RUN apk add --no-cache gcompat
+
 # コンテナを起動したときの作業作業ディレクトリを/appにする。
 WORKDIR /app  
 

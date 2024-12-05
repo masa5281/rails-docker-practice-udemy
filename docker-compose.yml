@@ -1,4 +1,4 @@
-version: '3'
+# version: '3'
 services: # 配下に起動するコンテナの詳細を記述する。
   web: # Railsアプリのサービス名（自由に設定できる）
     build: . # ymlを同じ階層にあるDockerfileを参照してイメージを使用する。
@@ -12,7 +12,7 @@ services: # 配下に起動するコンテナの詳細を記述する。
   db:
     image: mysql:8.0
     volumes: # マウント先のコンテナのディレクトリ（ここにMySQLが保存される）
-      - db-volumes:/var/lib/mysql
+      - db-volume:/var/lib/mysql
     environment: # コンテナに環境変数を設定
       MYSQL_ROOT_PASSWORD: password
 volumes: # コンテナ外にボリュームを作成
