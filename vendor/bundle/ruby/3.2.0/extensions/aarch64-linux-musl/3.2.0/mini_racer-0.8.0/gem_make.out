@@ -1,0 +1,20 @@
+current directory: /app/vendor/bundle/ruby/3.2.0/gems/mini_racer-0.8.0/ext/mini_racer_extension
+/usr/local/bin/ruby extconf.rb
+checking for -lpthread... yes
+checking for whether -Wl,--exclude-libs=ALL  is accepted as LDFLAGS... yes
+creating Makefile
+
+current directory: /app/vendor/bundle/ruby/3.2.0/gems/mini_racer-0.8.0/ext/mini_racer_extension
+make DESTDIR\= sitearchdir\=./.gem.20241206-1-la5tvq sitelibdir\=./.gem.20241206-1-la5tvq clean
+
+current directory: /app/vendor/bundle/ruby/3.2.0/gems/mini_racer-0.8.0/ext/mini_racer_extension
+make DESTDIR\= sitearchdir\=./.gem.20241206-1-la5tvq sitelibdir\=./.gem.20241206-1-la5tvq
+compiling mini_racer_extension.cc
+linking shared-object mini_racer_extension.so
+
+current directory: /app/vendor/bundle/ruby/3.2.0/gems/mini_racer-0.8.0/ext/mini_racer_extension
+make DESTDIR\= sitearchdir\=./.gem.20241206-1-la5tvq sitelibdir\=./.gem.20241206-1-la5tvq install
+/usr/bin/install -c -m 0755 mini_racer_extension.so ./.gem.20241206-1-la5tvq
+
+current directory: /app/vendor/bundle/ruby/3.2.0/gems/mini_racer-0.8.0/ext/mini_racer_extension
+make DESTDIR\= sitearchdir\=./.gem.20241206-1-la5tvq sitelibdir\=./.gem.20241206-1-la5tvq clean
