@@ -29,3 +29,6 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# git pushで100MBを超えるため追加 2024/12/6
+vendor/bundle/ruby/3.2.0/gems/libv8-node-18.16.0.0-aarch64-linux-musl/vendor/v8/aarch64-linux-musl/libv8/obj/libv8_monolith.a
