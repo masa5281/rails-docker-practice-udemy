@@ -9,6 +9,8 @@ services:
       - 3000:3000
     depends_on:
       - db
+    tty: true # キーボードによる入力をコンテナに結びつける
+    stdin_open: true # 標準入出力とエラー出力をコンテナに結びつける
   db:
     image: mysql:8.0
     volumes:
