@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   get 'boards', to: 'boards#index'
   get 'boards/new', to: 'boards#new'
+  post 'boards', to: 'boards#create'
 end
