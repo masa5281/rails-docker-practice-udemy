@@ -8,3 +8,6 @@ window.onload = function () {
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     const tooltipList = [...tooltipTriggerList].map(d => new bootstrap.Tooltip(d))
 }
+
+import Rails from "@rails/ujs" // @rails/ujsが使用でプロジェクトできるようにするための記述。
+Rails.start() // 有効化
