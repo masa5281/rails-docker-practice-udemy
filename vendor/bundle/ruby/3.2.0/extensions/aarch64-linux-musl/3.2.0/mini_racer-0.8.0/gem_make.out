@@ -1,20 +1,23 @@
 current directory: /app/vendor/bundle/ruby/3.2.0/gems/mini_racer-0.8.0/ext/mini_racer_extension
 /usr/local/bin/ruby extconf.rb
+Ignoring psych-5.2.1 because its extensions are not built. Try: gem pristine psych --version 5.2.1
+Ignoring date-3.4.1 because its extensions are not built. Try: gem pristine date --version 3.4.1
+Ignoring date-3.4.1 because its extensions are not built. Try: gem pristine date --version 3.4.1
 checking for -lpthread... yes
 checking for whether -Wl,--exclude-libs=ALL  is accepted as LDFLAGS... yes
 creating Makefile
 
 current directory: /app/vendor/bundle/ruby/3.2.0/gems/mini_racer-0.8.0/ext/mini_racer_extension
-make DESTDIR\= sitearchdir\=./.gem.20241206-1-la5tvq sitelibdir\=./.gem.20241206-1-la5tvq clean
+make DESTDIR\= sitearchdir\=./.gem.20241212-1-3n2a4t sitelibdir\=./.gem.20241212-1-3n2a4t clean
 
 current directory: /app/vendor/bundle/ruby/3.2.0/gems/mini_racer-0.8.0/ext/mini_racer_extension
-make DESTDIR\= sitearchdir\=./.gem.20241206-1-la5tvq sitelibdir\=./.gem.20241206-1-la5tvq
+make DESTDIR\= sitearchdir\=./.gem.20241212-1-3n2a4t sitelibdir\=./.gem.20241212-1-3n2a4t
 compiling mini_racer_extension.cc
 linking shared-object mini_racer_extension.so
 
 current directory: /app/vendor/bundle/ruby/3.2.0/gems/mini_racer-0.8.0/ext/mini_racer_extension
-make DESTDIR\= sitearchdir\=./.gem.20241206-1-la5tvq sitelibdir\=./.gem.20241206-1-la5tvq install
-/usr/bin/install -c -m 0755 mini_racer_extension.so ./.gem.20241206-1-la5tvq
+make DESTDIR\= sitearchdir\=./.gem.20241212-1-3n2a4t sitelibdir\=./.gem.20241212-1-3n2a4t install
+/usr/bin/install -c -m 0755 mini_racer_extension.so ./.gem.20241212-1-3n2a4t
 
 current directory: /app/vendor/bundle/ruby/3.2.0/gems/mini_racer-0.8.0/ext/mini_racer_extension
-make DESTDIR\= sitearchdir\=./.gem.20241206-1-la5tvq sitelibdir\=./.gem.20241206-1-la5tvq clean
+make DESTDIR\= sitearchdir\=./.gem.20241212-1-3n2a4t sitelibdir\=./.gem.20241212-1-3n2a4t clean

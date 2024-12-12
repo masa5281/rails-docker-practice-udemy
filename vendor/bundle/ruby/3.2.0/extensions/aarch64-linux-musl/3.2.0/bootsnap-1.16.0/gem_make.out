@@ -3,16 +3,16 @@ current directory: /app/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsn
 creating Makefile
 
 current directory: /app/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
-make DESTDIR\= sitearchdir\=./.gem.20241206-1-sqx345 sitelibdir\=./.gem.20241206-1-sqx345 clean
+make DESTDIR\= sitearchdir\=./.gem.20241212-1-8mg5cx sitelibdir\=./.gem.20241212-1-8mg5cx clean
 
 current directory: /app/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
-make DESTDIR\= sitearchdir\=./.gem.20241206-1-sqx345 sitelibdir\=./.gem.20241206-1-sqx345
+make DESTDIR\= sitearchdir\=./.gem.20241212-1-8mg5cx sitelibdir\=./.gem.20241212-1-8mg5cx
 compiling bootsnap.c
 linking shared-object bootsnap/bootsnap.so
 
 current directory: /app/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
-make DESTDIR\= sitearchdir\=./.gem.20241206-1-sqx345 sitelibdir\=./.gem.20241206-1-sqx345 install
-/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20241206-1-sqx345/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20241212-1-8mg5cx sitelibdir\=./.gem.20241212-1-8mg5cx install
+/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20241212-1-8mg5cx/bootsnap
 
 current directory: /app/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
-make DESTDIR\= sitearchdir\=./.gem.20241206-1-sqx345 sitelibdir\=./.gem.20241206-1-sqx345 clean
+make DESTDIR\= sitearchdir\=./.gem.20241212-1-8mg5cx sitelibdir\=./.gem.20241212-1-8mg5cx clean

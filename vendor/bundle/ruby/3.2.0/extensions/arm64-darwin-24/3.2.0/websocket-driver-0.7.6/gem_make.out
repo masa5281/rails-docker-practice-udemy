@@ -1,0 +1,19 @@
+current directory: /Users/masa/rails-practice/vendor/bundle/ruby/3.2.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+/Users/masa/.rbenv/versions/3.2.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/masa/rails-practice/vendor/bundle/ruby/3.2.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20241212-63940-eyzcau sitelibdir\=./.gem.20241212-63940-eyzcau clean
+
+current directory: /Users/masa/rails-practice/vendor/bundle/ruby/3.2.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20241212-63940-eyzcau sitelibdir\=./.gem.20241212-63940-eyzcau
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+ld: warning: ignoring duplicate libraries: '-lruby.3.2'
+
+current directory: /Users/masa/rails-practice/vendor/bundle/ruby/3.2.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20241212-63940-eyzcau sitelibdir\=./.gem.20241212-63940-eyzcau install
+/usr/bin/install -c -m 0755 websocket_mask.bundle ./.gem.20241212-63940-eyzcau
+
+current directory: /Users/masa/rails-practice/vendor/bundle/ruby/3.2.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20241212-63940-eyzcau sitelibdir\=./.gem.20241212-63940-eyzcau clean

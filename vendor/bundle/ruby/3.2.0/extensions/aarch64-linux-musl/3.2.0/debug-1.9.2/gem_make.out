@@ -3,17 +3,17 @@ current directory: /app/vendor/bundle/ruby/3.2.0/gems/debug-1.9.2/ext/debug
 creating Makefile
 
 current directory: /app/vendor/bundle/ruby/3.2.0/gems/debug-1.9.2/ext/debug
-make DESTDIR\= sitearchdir\=./.gem.20241206-85-j3ep81 sitelibdir\=./.gem.20241206-85-j3ep81 clean
+make DESTDIR\= sitearchdir\=./.gem.20241212-1-rvmwul sitelibdir\=./.gem.20241212-1-rvmwul clean
 
 current directory: /app/vendor/bundle/ruby/3.2.0/gems/debug-1.9.2/ext/debug
-make DESTDIR\= sitearchdir\=./.gem.20241206-85-j3ep81 sitelibdir\=./.gem.20241206-85-j3ep81
+make DESTDIR\= sitearchdir\=./.gem.20241212-1-rvmwul sitelibdir\=./.gem.20241212-1-rvmwul
 compiling debug.c
 compiling iseq_collector.c
 linking shared-object debug/debug.so
 
 current directory: /app/vendor/bundle/ruby/3.2.0/gems/debug-1.9.2/ext/debug
-make DESTDIR\= sitearchdir\=./.gem.20241206-85-j3ep81 sitelibdir\=./.gem.20241206-85-j3ep81 install
-/usr/bin/install -c -m 0755 debug.so ./.gem.20241206-85-j3ep81/debug
+make DESTDIR\= sitearchdir\=./.gem.20241212-1-rvmwul sitelibdir\=./.gem.20241212-1-rvmwul install
+/usr/bin/install -c -m 0755 debug.so ./.gem.20241212-1-rvmwul/debug
 
 current directory: /app/vendor/bundle/ruby/3.2.0/gems/debug-1.9.2/ext/debug
-make DESTDIR\= sitearchdir\=./.gem.20241206-85-j3ep81 sitelibdir\=./.gem.20241206-85-j3ep81 clean
+make DESTDIR\= sitearchdir\=./.gem.20241212-1-rvmwul sitelibdir\=./.gem.20241212-1-rvmwul clean
