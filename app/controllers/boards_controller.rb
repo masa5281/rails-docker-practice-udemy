@@ -11,6 +11,7 @@ class BoardsController < ApplicationController
 
   def create
     board = Board.create(board_params) # 引数に保存するパラメーターを渡すことでDBに保存できる。
+    flash[:notice] = "「#{board.title}」の掲示板を作成しました" # flashの任意のキーの値のデータが、次に参照されるまでセッションに保存される。
     redirect_to board # データ作成時点でidが付与されているため、参照している。
   end
 
@@ -28,8 +29,7 @@ class BoardsController < ApplicationController
 
   def destroy
     @board.destroy
-
-    redirect_to boards_path
+    redirect_to boards_path, flash: { notice: "「#{@board.title}」の掲示板が削除されました" }
   end
 
   private
