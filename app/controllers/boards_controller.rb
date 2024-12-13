@@ -17,7 +17,7 @@ class BoardsController < ApplicationController
     else
       redirect_to new_board_path, flash: {
         board: board, # flashでboardオブジェクトを返すことで、newメソッドで入力されたままの値で保持される。
-        error_message: board.errors.full_messages # エラーがあるとerrorsにエラーオブジェクトが格納され、full_messagesで見やすい形で配列にする。
+        error_messages: board.errors.full_messages # エラーがあるとerrorsにエラーオブジェクトが格納され、full_messagesで見やすい形で配列にする。
       }
     end
   end
