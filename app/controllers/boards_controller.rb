@@ -23,7 +23,7 @@ class BoardsController < ApplicationController
   end
 
   def show
-    @comment = @board.comments.new # 掲示板に紐づいた新しい新しいcommentオブジェクトを作成できる。
+    @comment = Comment.new(board_id: @board.id)
   end
 
   def edit
