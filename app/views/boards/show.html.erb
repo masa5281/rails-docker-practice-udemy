@@ -13,7 +13,8 @@
 
 <div class="p-comment__list">
   <div class="p-comment_listtitle">
-    <%# views/comments/_comment.html.erbがコメントの数だけレンダリングされる %>
+    <%# views/comments/_comment.html.erbがコメントの数だけレンダリングされる / each文を含んだ省略形%>
+    <%= render partial: 'comments/comment', collection: @board.comments %>
     <%= render @board.comments %>
   </div>
 </div>
