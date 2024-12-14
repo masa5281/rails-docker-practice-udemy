@@ -15,10 +15,9 @@ class BoardsController < ApplicationController
       flash[:notice] = "「#{board.title}」の掲示板を作成しました" # flashの任意のキーの値のデータが、次に参照されるまでセッションに保存される。
       redirect_to board # データ作成時点でidが付与されているため、参照している。
     else
-      redirect_to new_board_path, flash: {
-        board: board, # flashでboardオブジェクトを返すことで、newメソッドで入力されたままの値で保持される。
-        error_messages: board.errors.full_messages # エラーがあるとerrorsにエラーオブジェクトが格納され、full_messagesで見やすい形で配列にする。
-      }
+      flash[:board] = board # flashでboardオブジェクトを返すことで、newメソッドで入力されたままの値で保持される。
+      flash[:error_messages] = board.errors.full_messages # エラーがあるとerrorsにエラーオブジェクトが格納され、full_messagesで見やすい形で配列にする。
+      redirect_back fallback_location: new_board_path
     end
   end
 
@@ -30,8 +29,13 @@ class BoardsController < ApplicationController
   end
 
   def update
-    @board.update(board_params)
-    redirect_to @board
+    if @board.update(board_params) 
+      redirect_to @board
+    else
+      flash[:board] = @board
+      flash[:error_messages] = @board.errors.full_messages
+      redirect_back fallback_location: @board
+    end
   end
 
   def destroy
