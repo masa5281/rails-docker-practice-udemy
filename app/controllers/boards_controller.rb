@@ -2,7 +2,12 @@ class BoardsController < ApplicationController
   before_action :set_target_board, only: %i[show edit update destroy]
 
   def index
-    @boards = Board.page(params[:page])
+    # 渡されてくるパラメーターのハッシュにtag_idの値がある場合は、そのタグ情報をTagモデルから取得し、それに紐づいている掲示板一覧を取得する。
+    # もしtag_idの値がnilだった場合は掲示板を全件取得する。
+    # @boardsの中身が参照されるまでDBのアクセスは行われない。
+    @boards = params[:tag_id].present? ? Tag.find(params[:tag_id]).boards : Board.all
+    @boards = @boards.page(params[:page])
+
   end
 
   def new
