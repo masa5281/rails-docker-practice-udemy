@@ -46,7 +46,9 @@ class BoardsController < ApplicationController
   private
 
   def board_params
-    params.require(:board).permit(:author_name, :title, :body) # paramsの中のboardキーの中のauthor_name, title, bodyの値のみを取得できる。
+    # paramsの中のboardキーの中のauthor_name, title, bodyの値のみを取得できる。
+    # tag_ids → 複数のIDが渡されるので配列の形式で渡す。
+    params.require(:board).permit(:author_name, :title, :body, tag_ids: [])
   end
 
   def set_target_board
