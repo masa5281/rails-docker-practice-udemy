@@ -20,9 +20,9 @@ class User < ApplicationRecord
   uniqueness: true,
   length: { maximum: 16 },
   format: {
-    width: /\A[a-z0-9]+\z/, # 小文字のアルファベットか数字の0〜9のいずれかが1文字以上続く。
+    with: /\A[a-z0-9]+\z/, # 小文字のアルファベットか数字の0〜9のいずれかが1文字以上続く。
     message: 'は小文字英数字で入力してください' # 「不正な値です」というデフォルトのエラーメッセージをより明示的にするために指定
   }
-  validates :password, 
-  length: { minimun: 8 }
+  validates :password,
+  length: { minimum: 8 }
 end
