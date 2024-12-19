@@ -11,7 +11,7 @@ class UsersController < ApplicationController
     else
       flash[:user] = user # session情報のuserというキーに登録したユーザのIDを保存する。 / これを保持しているかでログイン中かを判断する。
       flash[:error_messages] = user.errors.full_messages
-      redirect_back fallback_location: new_user_path
+      redirect_to request.referer || new_user_path, allow_other_host: true
     end
   end
 

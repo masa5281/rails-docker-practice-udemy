@@ -60,6 +60,7 @@ group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
   gem 'rails-flog', require: 'flog'
   gem 'rspec-rails', '~> 7.0.0'
+  gem 'rails-controller-testing' # アクションがレンダリングするビューが何か？ / アクションからビューに渡される変数のテストなどができる。
 end
 
 group :development do
